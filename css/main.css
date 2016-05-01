@@ -4,7 +4,169 @@
  *
  * Site Styles
  *****************************************************************************/
-
- html {
-     color: green;
+/* body */
+ html, body {
+   color: black;
+   margin: 0;
+   padding: 0;
+   font-family: Tahoma;
+   background-image: URL("http://www.magic4walls.com/wp-content/uploads/2014/03/texture-green-paper-pattern-scratch-background-photo-hd-wallpaper-694x417.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: 100% 100%;
+   min-height: 100%;
+   min-width: 100%;
+   background-size: cover;
  }
+section, footer{
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+a:hover {
+  text-decoration: none;
+  text-decoration: underline;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Added div's throughout html to help fix images with position: absolute. Changed width so page looks the same when browser is changed */
+div{
+  position: relative;
+  width: 1250px
+}
+/* End body */
+
+/* Header */
+/* backgound added to header. fit to screen */
+header{
+  background-position: 100% 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: URL("../img/official_header.jpg");
+  height: 300px;
+  padding: 5px;
+  padding-left: 10px;
+}
+/* changed nav links to look more like a nav bar */
+header ul{
+  position: absolute;
+  top: 265px;
+  margin: 20px;
+  border: 1px solid black;
+  padding-left: 0;
+  border-radius: 3px;
+}
+header li{
+  height: 21px;
+  padding-right: 50px;
+  padding-left: 30px;
+  border-right: 1px solid black;
+}
+header li:nth-child(3){
+  border-right: none;
+}
+header p{
+  position: absolute;
+  top: 245px;
+  font-weight: bold;
+}
+
+.main-nav li{
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+/* End Header */
+
+/* Aside #social */
+/* chnaged aside to follow the user and appear in the top right of the screen. */
+aside{
+  padding: 20px;
+}
+#social{
+  background-color: lightblue;
+  opacity: .4;
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  right: 0;
+  width: 55px;
+  height: 250px;
+  padding: 5px;
+}
+#social:hover{
+  width: 75px;
+  opacity: 1;
+}
+#social ul{
+  list-style-type: none;
+  padding: 0;
+}
+#social li{
+  margin: 0;
+  padding: 5px;
+}
+/* End Aside */
+
+/* Section #watch */
+#watch{
+}
+/* photo added next to movie. */
+#crystal{
+  height: 290px;
+  width 300px;
+  float: right;
+  margin-top: 75px;
+  margin-right:40px;
+}
+#watch video{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#watch a{
+  padding: 5px;
+}
+
+/* End Watch Section */
+
+/* Section #listen */
+/* added flying monkey loop next to audio link. filled in empty space */
+#listen video{
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  right:185px;
+  top: -25px;
+}
+
+#listen p{
+  margin-bottom: 0;
+}
+/* End Listen Section */
+/* #about Section */
+#about{
+}
+p.lead{
+  font-size: 110%;
+}
+
+#about p{
+  font-family: Tahoma;
+}
+.weybec-people{
+  list-style-type: none;
+  font-weight: bold;
+  color: black;
+}
+/* changed photo size */
+img.headshot{
+  height: 300px;
+  width: 300x;
+}
+
+/* End about section */
